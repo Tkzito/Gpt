@@ -1,5 +1,5 @@
 const path = require("path");
-const { app, BrowserWindow, ipcMain, Menu } = require("electron");
+const { app, BrowserWindow, ipcMain, Menu , globalShortcut } = require("electron");
 const screen = require("electron").screen;
 
 let janela;
@@ -101,13 +101,10 @@ app.whenReady().then(() => {
         aplicarNovosEstilos();
     });
 
-    // Capturar evento de atalho de teclado
-    janela.on("before-input-event", (event, input) => {
-        if (input.key === "m" && (input.control || input.meta)) {
-            abrirOuFecharJanela(isMinimized ? "show" : "hide");
-            event.preventDefault(); // Impedir o comportamento padrão do atalho
-        }
-    });
+    // Abrir e fechar com Control + M
+    globalShortcut.register('Control+M', () => {
+        abrirOuFecharJanela(isMinimized ? "show" : "hide");
+    })
 });
 
 ipcMain.on("AbrirOuFecharJanela", (event, status) => {
