@@ -3,6 +3,8 @@ Sou Rodrigo estudando de Analise e Desenvolvimento de Sistema, a ideia é criar 
 Tela GPT suspensa para facilitar o aceso, a ideia é tentar imcorporar reconhecimento de voz e leitor de texto.
 Como deficiente monocular estou tantando usar dessa forma a ferramenta do GPT para facilitar meu uso, usando Linux como sistema operacional.
 
+Obs... no momento só é possivel fazer login com conta da Microsoft, da Google diz que o app ou navegador não é seguro.
+O codigo fonte está a disposição para quem quisar ajudar a corrigir esse problema e ajudar a implementar reconhecimento de voz e leitor de texto.
 
 Para usar o app siga as instruções a baixo:
 
