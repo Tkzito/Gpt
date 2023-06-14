@@ -5,14 +5,21 @@ Como deficiente monocular estou tantando usar dessa forma a ferramenta do GPT pa
 
 
 Para usar o app siga as instruções a baixo:
+
 Abra o terminal em seu sistema
+
 Faça o clone do repositorio
+
 git clone e cole a URL já copiada
+
 git clone https://github.com/Tkzito/Gpt
 
 Sista Linux "Debian e derivados"
+
 Instalar node, e npm install
+
 sudo apt install node
+
 npm install
 
 na pasta do diretorio só executar com o comando a seguir
